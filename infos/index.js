@@ -1,0 +1,12 @@
+console.log(process.env);
+// 表示差の確認のため
+console.log('=============');
+console.log(JSON.stringify(process.env, null, 2));
+
+for (var i = 0; i < process.argv.length; i++) {
+  console.log(`${i}: ${process.argv[i]}`);
+}
+
+console.log(`cwd(): ${process.cwd()}`);
+console.log(`__dirname: ${__dirname}`);
+console.log(process.platform);
